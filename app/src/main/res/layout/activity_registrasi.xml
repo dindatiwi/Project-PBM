@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrasiActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201"
+        android:contentDescription="@string/todo">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textViewPerhitunganUangKu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_black"
+        android:text="@string/perhitungan_uang_ku"
+        android:textAllCaps="true"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.016">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewMasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="@string/daftar"
+        android:textAllCaps="true"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPerhitunganUangKu"
+        app:layout_constraintVertical_bias="0.159">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextDaftarNmPengguna"
+        android:layout_width="230dp"
+        android:layout_height="41dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:hint="@string/nama_pengguna"
+        android:inputType="textPersonName"
+        android:paddingStart="25dp"
+        android:textSize="15sp"
+        android:maxLength="12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMasuk"
+        app:layout_constraintVertical_bias="0.07"
+        tools:ignore="RtlSymmetry"
+        android:importantForAutofill="no">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextDaftarPIN"
+        android:layout_width="230dp"
+        android:layout_height="41dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:hint="@string/pin"
+        android:inputType="numberPassword"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:textSize="15sp"
+        android:maxLength="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDaftarNmPengguna"
+        app:layout_constraintVertical_bias="0.047"
+        android:importantForAutofill="no">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextDaftarUlangiPIN"
+        android:layout_width="230dp"
+        android:layout_height="41dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:hint="@string/ulangi_pin"
+        android:inputType="numberPassword"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:textSize="15sp"
+        android:maxLength="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDaftarPIN"
+        app:layout_constraintVertical_bias="0.054"
+        android:importantForAutofill="no">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonDaftar"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="@string/daftar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDaftarUlangiPIN"
+        app:layout_constraintVertical_bias="0.19">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textViewBelumPunyaAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="@string/sudah_mempunyai_akun"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDaftar"
+        app:layout_constraintVertical_bias="0.356">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewKlikDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="@string/masuk"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewBelumPunyaAkun"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDaftar"
+        app:layout_constraintVertical_bias="0.356">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewKelompokUbed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="@string/_2020_kelompok_ubed"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBelumPunyaAkun"
+        app:layout_constraintVertical_bias="0.617"
+        tools:ignore="SmallSp">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

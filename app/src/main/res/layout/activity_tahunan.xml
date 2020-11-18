@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".TahunanActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewBtnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btnleft"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="25dp"
+            android:contentDescription="@string/todo">
+
+        </ImageView>
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="197dp"
+            android:layout_height="32dp"
+            android:background="@drawable/searchview"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="20dp"
+            android:iconifiedByDefault="false"
+            android:layoutDirection="rtl"
+            android:queryHint="pencarian"
+            android:theme="@style/AppSearchView">
+
+        </SearchView>
+
+        <TextView
+            android:id="@+id/textViewHarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:text="@string/tahunan"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:layout_marginTop="73dp"
+            android:layout_centerHorizontal="true"
+            tools:ignore="RelativeOverlap">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewWaktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="106dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="RelativeOverlap">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSaldo"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"/>
+
+
+</LinearLayout>

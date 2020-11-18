@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Perhitungan Uang Ku</string>
+    <string name="hi">Hi,</string>
+    <string name="string_hi" />
+    <string name="harian">Harian</string>
+    <string name="todo">TODO</string>
+    <string name="mingguan">Mingguan</string>
+    <string name="bulanan">Bulanan</string>
+    <string name="tahunan">Tahunan</string>
+    <string name="perhitungan_uang_ku">Perhitungan Uang Ku</string>
+    <string name="_2020_kelompok_ubed">© 2020 kelompok Ubed</string>
+    <string name="daftar">Daftar</string>
+    <string name="belum_mempunyai_akun">Belum mempunyai akun ?</string>
+    <string name="lupa_pin">Lupa PIN ?</string>
+    <string name="masuk">Masuk</string>
+    <string name="pin">PIN</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="ulangi_pin">Ulangi PIN</string>
+    <string name="sudah_mempunyai_akun">Sudah mempunyai akun ?</string>
+    <string name="saldo">Saldo</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="akun">Akun</string>
+    <string name="sistem">Sistem</string>
+    <string name="pemberitahuan">Pemberitahuan</string>
+    <string name="database">Database</string>
+    <string name="statistik">Statistik</string>
+    <string name="backup_restore_data_di_penyimpanan_internal">Backup/restore data di penyimpanan internal</string>
+    <string name="reset_data_konsep_dan_kategori">Reset data (konsep dan kategori)</string>
+    <string name="kategori">Kategori</string>
+
+</resources>

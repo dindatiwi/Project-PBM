@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuHalamanUtama"
+        android:title="Halaman Utama"
+        android:icon="@drawable/home">
+    </item>
+
+    <item
+        android:id="@+id/menuStatistik"
+        android:title="Statistik"
+        android:icon="@drawable/chart_bar">
+    </item>
+
+    <item
+        android:id="@+id/menuKategori"
+        android:title="Kategori"
+        android:icon="@drawable/list_alt">
+    </item>
+
+    <item
+        android:id="@+id/menuPengaturan"
+        android:title="Pengaturan"
+        android:icon="@drawable/cog">
+    </item>
+
+</menu>
