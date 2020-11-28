@@ -70,7 +70,7 @@
         android:paddingStart="25dp"
         android:paddingEnd="25dp"
         android:textSize="15sp"
-        android:maxLength="12"
+        android:maxLength="15"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

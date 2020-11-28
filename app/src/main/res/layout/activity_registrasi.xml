@@ -40,7 +40,7 @@
     </TextView>
 
     <TextView
-        android:id="@+id/textViewMasuk"
+        android:id="@+id/textViewDaftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -54,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPerhitunganUangKu"
-        app:layout_constraintVertical_bias="0.159">
+        app:layout_constraintVertical_bias="0.088">
 
     </TextView>
 
@@ -66,15 +66,36 @@
         android:ems="10"
         android:fontFamily="@font/source_sans_pro_semibold"
         android:hint="@string/nama_pengguna"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:paddingStart="25dp"
         android:textSize="15sp"
-        android:maxLength="12"
+        android:maxLength="15"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMasuk"
-        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDaftar"
+        app:layout_constraintVertical_bias="0.043"
+        tools:ignore="RtlSymmetry">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="230dp"
+        android:layout_height="41dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="25dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDaftarNmPengguna"
+        app:layout_constraintVertical_bias="0.036"
         tools:ignore="RtlSymmetry"
         android:importantForAutofill="no">
 
@@ -88,17 +109,17 @@
         android:ems="10"
         android:fontFamily="@font/source_sans_pro_semibold"
         android:hint="@string/pin"
+        android:importantForAutofill="no"
         android:inputType="numberPassword"
+        android:maxLength="6"
         android:paddingStart="25dp"
         android:paddingEnd="25dp"
         android:textSize="15sp"
-        android:maxLength="6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDaftarNmPengguna"
-        app:layout_constraintVertical_bias="0.047"
-        android:importantForAutofill="no">
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintVertical_bias="0.045">
 
     </EditText>
 
@@ -110,17 +131,17 @@
         android:ems="10"
         android:fontFamily="@font/source_sans_pro_semibold"
         android:hint="@string/ulangi_pin"
+        android:importantForAutofill="no"
         android:inputType="numberPassword"
+        android:maxLength="6"
         android:paddingStart="25dp"
         android:paddingEnd="25dp"
         android:textSize="15sp"
-        android:maxLength="6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDaftarPIN"
-        app:layout_constraintVertical_bias="0.054"
-        android:importantForAutofill="no">
+        app:layout_constraintVertical_bias="0.062">
 
     </EditText>
 
@@ -139,7 +160,7 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDaftarUlangiPIN"
-        app:layout_constraintVertical_bias="0.19">
+        app:layout_constraintVertical_bias="0.167">
 
     </Button>
 
@@ -153,10 +174,10 @@
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintHorizontal_bias="0.402"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonDaftar"
-        app:layout_constraintVertical_bias="0.356">
+        app:layout_constraintVertical_bias="0.206">
 
     </TextView>
 
@@ -170,10 +191,10 @@
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toEndOf="@+id/textViewBelumPunyaAkun"
         app:layout_constraintTop_toBottomOf="@+id/buttonDaftar"
-        app:layout_constraintVertical_bias="0.356">
+        app:layout_constraintVertical_bias="0.206">
 
     </TextView>
 

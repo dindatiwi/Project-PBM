@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,87 +9,167 @@
     android:background="@color/white2"
     tools:context=".PengaturanActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rectangle3">
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageViewBtnLeft"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/btnleft"
-            android:layout_marginTop="27dp"
-            android:layout_marginStart="25dp"
-            android:contentDescription="@string/todo">
-
-        </ImageView>
-
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="197dp"
-            android:layout_height="32dp"
-            android:background="@drawable/searchview"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="23dp"
-            android:layout_marginEnd="20dp"
-            android:iconifiedByDefault="false"
-            android:layoutDirection="rtl"
-            android:queryHint="pencarian"
-            android:theme="@style/AppSearchView">
-
-        </SearchView>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="85dp"
-            tools:ignore="RelativeOverlap,UseCompoundDrawables">
+            android:background="@drawable/rectangle3">
 
             <ImageView
-                android:id="@+id/imageViewPengaturan"
+                android:id="@+id/imageViewBtnLeft"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/pengaturan"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="10dp"
+                android:src="@drawable/btnleft"
+                android:layout_marginTop="27dp"
+                android:layout_marginStart="25dp"
                 android:contentDescription="@string/todo">
 
             </ImageView>
 
-            <TextView
-                android:id="@+id/textViewPengaturan"
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="197dp"
+                android:layout_height="32dp"
+                android:background="@drawable/searchview"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="20dp"
+                android:iconifiedByDefault="false"
+                android:layoutDirection="rtl"
+                android:queryHint="pencarian"
+                android:theme="@style/AppSearchView">
+
+            </SearchView>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/source_sans_pro_semibold"
-                android:text="@string/pengaturan"
-                android:textSize="25sp"
-                android:textColor="@color/white">
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"
+                tools:ignore="RelativeOverlap,UseCompoundDrawables">
 
-            </TextView>
+                <ImageView
+                    android:id="@+id/imageViewPengaturan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pengaturan"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/todo">
 
-        </LinearLayout>
+                </ImageView>
 
-    </RelativeLayout>
+                <TextView
+                    android:id="@+id/textViewPengaturan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:text="@string/pengaturan"
+                    android:textSize="25sp"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAkun"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_margin="25dp">
+
+                <TextView
+                    android:id="@+id/textViewAkun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:text="@string/akun"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp">
+
+                </TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@color/gray">
+
+                </View>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewPengaturanAkun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:text="@string/pengaturan_akun"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.102"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.662">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/imageViewBtnRightPengaturanAkun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btnright_green"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.853"
+                        app:layout_constraintStart_toEndOf="@+id/textViewPengaturanAkun"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.69"
+                        android:contentDescription="@string/todo">
+
+                    </ImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewAkun"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="3dp"
-        android:layout_width="match_parent"
-        android:layout_height="167dp"
-        android:layout_margin="25dp">
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSistem"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp">
 
             <TextView
-                android:id="@+id/textViewAkun"
+                android:id="@+id/textViewSistem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="@font/source_sans_pro_semibold"
-                android:text="@string/akun"
+                android:text="@string/sistem"
                 android:textSize="15sp"
                 android:textColor="@color/black"
                 android:layout_margin="10dp">
@@ -97,6 +177,7 @@
             </TextView>
 
             <View
+                android:id="@+id/horizontalLineSistem"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="35dp"
@@ -107,215 +188,356 @@
 
             </View>
 
-        <TextView
-            android:id="@+id/textViewAkunNmPengguna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/source_sans_pro"
-            android:text="@string/nama_pengguna"
-            android:textColor="@color/black"
-            android:textSize="14sp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewPemberitahuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="@string/pemberitahuan"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/switchPemberitahuan"
+                    app:layout_constraintHorizontal_bias="0.145"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.314">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textViewLokasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="Lokasi / GPS"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/switchLokasi"
+                    app:layout_constraintHorizontal_bias="0.132"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewPemberitahuan"
+                    app:layout_constraintVertical_bias="0.11">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textViewWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="Wifi"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/switchWifi"
+                    app:layout_constraintHorizontal_bias="0.108"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLokasi"
+                    app:layout_constraintVertical_bias="0.173">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textViewBluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="Bluetooth"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/switchBluetooth"
+                    app:layout_constraintHorizontal_bias="0.125"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewWifi"
+                    app:layout_constraintVertical_bias="0.324">
+
+                </TextView>
+
+                <Switch
+                    android:id="@+id/switchPemberitahuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.922"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.273"
+                    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                </Switch>
+
+                <Switch
+                    android:id="@+id/switchLokasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.922"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switchPemberitahuan"
+                    app:layout_constraintVertical_bias="0.031"
+                    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                </Switch>
+
+                <Switch
+                    android:id="@+id/switchWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.922"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switchLokasi"
+                    app:layout_constraintVertical_bias="0.061"
+                    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                </Switch>
+
+                <Switch
+                    android:id="@+id/switchBluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.922"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switchWifi"
+                    app:layout_constraintVertical_bias="0.147"
+                    tools:ignore="UseSwitchCompatOrMaterialXml">
 
 
-        </TextView>
-
-        <TextView
-            android:id="@+id/textViewShowNmPengguna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/source_sans_pro"
-            android:text=""
-            android:textColor="@color/black"
-            android:textSize="14sp">
+                </Switch>
 
 
-        </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/textViewAkunPIN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/source_sans_pro"
-            android:text="@string/pin"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp">
+        </androidx.cardview.widget.CardView>
 
-        </TextView>
-
-        <TextView
-            android:id="@+id/textViewShowAkunPIN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/source_sans_pro"
-            android:text=""
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp">
-
-        </TextView>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewSistem"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="3dp"
-        android:layout_width="match_parent"
-        android:layout_height="125dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="25dp">
-
-        <TextView
-            android:id="@+id/textViewSistem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/source_sans_pro_semibold"
-            android:text="@string/sistem"
-            android:textSize="15sp"
-            android:textColor="@color/black"
-            android:layout_margin="10dp">
-
-        </TextView>
-
-        <View
-            android:id="@+id/horizontalLineSistem"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDatabase"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="30dp"
-            android:background="@color/gray">
+            android:layout_height="136dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp">
 
-        </View>
+            <TextView
+                android:id="@+id/textViewDatabase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="@string/database"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp">
 
-        <TextView
-            android:id="@+id/textViewPemberitahuan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/source_sans_pro"
-            android:text="@string/pemberitahuan"
-            android:textColor="@color/black"
-            android:textSize="14sp">
+            </TextView>
 
-        </TextView>
+            <View
+                android:id="@+id/horizontalLineDatabase"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/gray">
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="65dp"
-            android:layout_marginEnd="20dp"
-            tools:ignore="UseSwitchCompatOrMaterialXml"
-            android:layout_gravity="end">
+            </View>
 
-        </Switch>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewDatabase"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="3dp"
-        android:layout_width="match_parent"
-        android:layout_height="136dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="25dp">
+                <TextView
+                    android:id="@+id/textViewBackupOrRestore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="@string/backup_restore_data_di_penyimpanan_internal"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageViewBtnRightRestore"
+                    app:layout_constraintHorizontal_bias="0.376"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textViewDatabase"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/source_sans_pro_semibold"
-            android:text="@string/database"
-            android:textSize="15sp"
-            android:textColor="@color/black"
-            android:layout_margin="10dp">
+                </TextView>
 
-        </TextView>
+                <TextView
+                    android:id="@+id/textViewReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="@string/reset_data_konsep_dan_kategori"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageViewBtnRightReset"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewBackupOrRestore"
+                    app:layout_constraintVertical_bias="0.0">
 
-        <View
-            android:id="@+id/horizontalLineDatabase"
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/imageViewBtnRightRestore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/btnright_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.914"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.504">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imageViewBtnRightReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/btnright_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.914"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewBtnRightRestore"
+                    app:layout_constraintVertical_bias="0.352">
+
+                </ImageView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewInformasi"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="30dp"
-            android:background="@color/gray">
+            android:layout_height="136dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp">
 
-        </View>
+            <TextView
+                android:id="@+id/textViewInformasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="Informasi"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp">
 
-        <TextView
-            android:id="@+id/textViewBackupOrRestore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:fontFamily="@font/source_sans_pro"
-            android:text="@string/backup_restore_data_di_penyimpanan_internal"
-            android:textColor="@color/black"
-            android:textSize="14sp">
+            </TextView>
 
-        </TextView>
+            <View
+                android:id="@+id/horizontalLineInformasi"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/gray">
 
-        <ImageView
-            android:id="@+id/imageViewRestoreGreenBtnRight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="65dp"
-            android:layout_marginEnd="35dp"
-            android:src="@drawable/btnright_green"
-            android:layout_gravity="end"
-            android:contentDescription="@string/todo">
+            </View>
 
-        </ImageView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textViewReset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/source_sans_pro"
-            android:text="@string/reset_data_konsep_dan_kategori"
-            android:textColor="@color/black"
-            android:textSize="14sp">
+                <ImageView
+                    android:id="@+id/imageViewBtnRightBantuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/btnright_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.922"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.504">
 
-        </TextView>
+                </ImageView>
 
-        <ImageView
-            android:id="@+id/imageViewResetGreenBtnRight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="95dp"
-            android:layout_marginEnd="35dp"
-            android:src="@drawable/btnright_green"
-            android:layout_gravity="end"
-            android:contentDescription="@string/todo">
+                <ImageView
+                    android:id="@+id/imageViewBtnRightAbout"
+                    android:layout_width="8dp"
+                    android:layout_height="9dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/btnright_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.922"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewBtnRightBantuan"
+                    app:layout_constraintVertical_bias="0.452">
 
-        </ImageView>
+                </ImageView>
 
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textViewBantuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="Bantuan"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageViewBtnRightBantuan"
+                    app:layout_constraintHorizontal_bias="0.098"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-</LinearLayout>
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="Tentang aplikasi Keuangan KU"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageViewBtnRightAbout"
+                    app:layout_constraintHorizontal_bias="0.173"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewBantuan"
+                    app:layout_constraintVertical_bias="0.292">
+
+                </TextView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

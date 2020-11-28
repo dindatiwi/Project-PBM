@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle3">
+
+        <ImageView
+            android:id="@+id/imageViewBtnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btnleft"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="25dp"
+            android:contentDescription="@string/todo">
+
+        </ImageView>
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="197dp"
+            android:layout_height="32dp"
+            android:background="@drawable/searchview"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="20dp"
+            android:iconifiedByDefault="false"
+            android:layoutDirection="rtl"
+            android:queryHint="pencarian"
+            android:theme="@style/AppSearchView">
+
+        </SearchView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            tools:ignore="RelativeOverlap,UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imageViewPengaturan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pengaturan"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/todo">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textViewPengaturan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="@string/pengaturan"
+                android:textSize="25sp"
+                android:textColor="@color/white">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAbout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:id="@+id/textViewAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="@string/tentang_aplikasi_keuangan_ku"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/gray">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/aplikasi_keuangan_ku_untuk_android">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/keuangan_ku_dan_logo_keuangan_ku_merupakan_merek_dagang_kelompok_ubed_hak_cipta_dilindungi_undang_undang">
+
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="230dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/keuangan_ku_untuk_android_dibuat_menggunakan_perangkat_lunak_sumber_terbuka">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="300dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="300dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/versi_1_0_0">
+
+        </TextView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".LupaPin2Activity">
+
+    <TextView
+        android:id="@+id/textViewCekEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Yuk \n\Cek Email Kamu..."
+        android:textColor="@color/white"
+        android:textSize="41sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCekEmail"
+        app:layout_constraintVertical_bias="0.229"
+        android:contentDescription="@string/todo">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/buttonSelesai"
+        android:layout_width="106dp"
+        android:layout_height="44dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="@string/selesai"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEmail"
+        app:layout_constraintVertical_bias="0.654">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textViewKelompokUbed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="@string/_2020_kelompok_ubed"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelesai"
+        app:layout_constraintVertical_bias="0.689"
+        tools:ignore="SmallSp">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
