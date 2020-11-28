@@ -12,7 +12,7 @@
     <string name="daftar">Daftar</string>
     <string name="belum_mempunyai_akun">Belum mempunyai akun ?</string>
     <string name="lupa_pin">Lupa PIN ?</string>
-    <string name="masuk">Masuk</string>
+    <string name="masuk"> Masuk</string>
     <string name="pin">PIN</string>
     <string name="nama_pengguna">Nama Pengguna</string>
     <string name="ulangi_pin">Ulangi PIN</string>
@@ -27,5 +27,20 @@
     <string name="backup_restore_data_di_penyimpanan_internal">Backup/restore data di penyimpanan internal</string>
     <string name="reset_data_konsep_dan_kategori">Reset data (konsep dan kategori)</string>
     <string name="kategori">Kategori</string>
+    <string name="kamu_lupa_pin">Kamu Lupa PIN?</string>
+    <string name="masukan_email">Masukan Email</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="kembali">Kembali</string>
+    <string name="pengaturan_akun">Pengaturan akun</string>
+    <string name="alamat_email">Alamat Email</string>
+    <string name="tentang_aplikasi_keuangan_ku">Tentang Aplikasi Keuangan KU</string>
+    <string name="keuangan_ku_dan_logo_keuangan_ku_merupakan_merek_dagang_kelompok_ubed_hak_cipta_dilindungi_undang_undang">Keuangan KU dan logo Keuangan KU merupakan merek dagang Kelompok Ubed. Hak cipta dilindungi undang - undang</string>
+    <string name="keuangan_ku_untuk_android_dibuat_menggunakan_perangkat_lunak_sumber_terbuka">Keuangan KU untuk Android dibuat menggunakan perangkat lunak sumber terbuka.</string>
+    <string name="aplikasi_keuangan_ku_untuk_android">Aplikasi Keuangan KU Untuk Android</string>
+    <string name="versi_1_0_0">Versi 1.0.0</string>
+    <string name="email">Email</string>
+    <string name="selesai">Selesai</string>
+    <string name="pemasukan">Pemasukan</string>
+    <string name="pengeluaran">Pengeluaran</string>
 
 </resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".LupaPin1Activity">
+
+  <TextView
+      android:id="@+id/textViewKamuLupaPIN"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/source_sans_pro_bold"
+      android:text="@string/kamu_lupa_pin"
+      android:textColor="@color/white"
+      android:textSize="41sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.133">
+
+  </TextView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardViewMasukanEmail"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_margin="45dp"
+      app:cardBackgroundColor="@color/green3"
+      app:cardCornerRadius="40dp"
+      app:cardElevation="3dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.6"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewKamuLupaPIN"
+      app:layout_constraintVertical_bias="0.165">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/textViewMasukanEmail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/source_sans_pro_bold"
+          android:text="@string/masukan_email"
+          android:textColor="@color/green"
+          android:textSize="30sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.27">
+
+      </TextView>
+
+      <EditText
+          android:id="@+id/editTextMasukEmail"
+          android:layout_width="230dp"
+          android:layout_height="41dp"
+          android:background="@drawable/edittext"
+          android:ems="10"
+          android:fontFamily="@font/source_sans_pro_semibold"
+          android:hint="@string/email"
+          android:importantForAutofill="no"
+          android:inputType="textEmailAddress"
+          android:paddingStart="25dp"
+          android:paddingEnd="25dp"
+          android:textSize="15sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewMasukanEmail"
+          app:layout_constraintVertical_bias="0.206">
+
+      </EditText>
+
+      <Button
+          android:id="@+id/buttonLanjut"
+          android:layout_width="85dp"
+          android:layout_height="35dp"
+          android:background="@drawable/button"
+          android:fontFamily="@font/source_sans_pro_semibold"
+          android:text="@string/lanjut"
+          android:textAllCaps="false"
+          android:textColor="@color/white"
+          android:textSize="15sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.501"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/editTextMasukEmail">
+
+      </Button>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <Button
+      android:id="@+id/buttonKembali"
+      android:layout_width="106dp"
+      android:layout_height="44dp"
+      android:background="@drawable/button"
+      android:fontFamily="@font/source_sans_pro_semibold"
+      android:text="@string/kembali"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      android:textSize="15sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.103"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardViewMasukanEmail"
+      app:layout_constraintVertical_bias="0.654">
+
+  </Button>
+
+  <TextView
+      android:id="@+id/textViewKelompokUbed"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="4dp"
+      android:fontFamily="@font/source_sans_pro_semibold"
+      android:text="@string/_2020_kelompok_ubed"
+      android:textColor="@color/white"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonKembali"
+      app:layout_constraintVertical_bias="0.689"
+      tools:ignore="SmallSp">
+
+  </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

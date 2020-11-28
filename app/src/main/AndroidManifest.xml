@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +20,20 @@
         <activity android:name=".RegistrasiActivity">
             <intent-filter>
                 <action android:name=".RegistrasiActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LupaPin1Activity">
+            <intent-filter>
+                <action android:name=".LupaPin1Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LupaPin2Activity">
+            <intent-filter>
+                <action android:name=".LupaPin2Activity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -61,6 +76,20 @@
         <activity android:name=".PengaturanActivity">
             <intent-filter>
                 <action android:name=".PengaturanActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PengaturanAkunActivity">
+            <intent-filter>
+                <action android:name=".PengaturanAkunActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutActivity">
+            <intent-filter>
+                <action android:name=".AboutActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
